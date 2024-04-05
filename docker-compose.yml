@@ -21,7 +21,7 @@ services:
     ports:
       - "9090:9090"
     volumes: 
-      - "prometheus-data:/prometheus-data:rw"
+      - "prometheus-data:/prometheus:rw"
       - "./prometheus.yml:/etc/prometheus/prometheus.yml"
     privileged: true
     depends_on:
